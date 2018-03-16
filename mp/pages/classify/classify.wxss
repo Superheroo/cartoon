@@ -1,0 +1,71 @@
+/* pages/classify/classify.wxss */
+.classify{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.search-bar{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color:#FFC824;
+  padding: 10rpx 5%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.search-bar .search-box{
+  width: 75%;
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  border-radius:8px; 
+  margin-right: 4%; 
+}
+.search-bar .search-comfirm{
+  text-align: center;
+  width: 18%;
+  height: 45px;
+  line-height: 45px;
+  box-sizing: border-box;
+  border: 2px solid saddlebrown;
+  border-radius: 8px; 
+  color: saddlebrown;
+  font-weight: bold;
+}
+.search-bar input{
+  margin-left: 20rpx;
+  width: 400rpx;
+}
+
+.category-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.category-item{
+  width: 40%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: saddlebrown;
+  border:4px solid saddlebrown;
+  border-radius: 8px; 
+  margin-bottom: 20rpx; 
+}
+.category-item-hover{
+  background-color: rgba(139, 69, 19, .4)
+}
+

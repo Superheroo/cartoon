@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="card_box">
+    <block wx:for="{{hot}}" wx:for-item="item" wx:key="1">
+
+      <view class='card' hover-class='card-hover' bindtap='goToDetail' data-comicname="{{item.name}}" data-comicdata="{{item}}">
+      
+        <view  class='cover'>
+          <image src='{{item.coverImg}}' mode="widthFix"></image>
+        </view>
+        <view class='info'>
+          <text class="info-title">{{item.name}}</text>
+          <text class='info-hot'>人气：{{item.hot}}</text>
+          <view class='info-tag'>
+            <text wx:for="{{item.tag}}" wx:for-item="t" wx:key="1">{{t}}</text>
+          </view>
+          <text class='info-desc'>{{item.des}}</text>
+        </view>
+        
+
+      </view>
+    </block>
+
+
+  </view>
+
+
+
+
+</view>

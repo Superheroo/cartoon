@@ -1,0 +1,99 @@
+/* pages/detail/detail.wxss */
+
+.header{
+  display: flex;
+  width: 100%;
+  padding: 30rpx;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header .headPic{
+  flex:4;
+}
+.header .headPic image{
+  width: 100%;
+}
+
+
+.header .headInfo{
+  flex:6;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 20rpx;
+  box-sizing: border-box;
+}
+
+.header .headInfo .title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .headInfo text{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .headInfo .collectBtn{
+    float: right;
+    width: 50rpx;
+    height: 50rpx;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header .headInfo .tag,.header .headInfo .author,.header .headInfo .hot{
+  font-size:16px;
+  margin-top: 4vw;
+}
+
+.options{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap
+}
+.options button{
+   flex:1; 
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+.options button::after{
+  border: none;
+  /* background-color: #fff; */
+}
+.options button.active{
+  color:#FFC824;
+  border-bottom:2px solid #FFC824;
+}
+.options button.button-hover{
+  color: #FFC824;
+}
+.option_card {
+  width: 100%;
+}
+.option_card .desc{
+  padding:30rpx;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.option_card .summary{
+  width: 100%;
+  height:670rpx;
+}
+
+.option_card .summary .chapter_box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 30rpx;
+}
+.option_card .summary .chapter_box button{
+  width: 30%;
+  margin-right: 0;
+  margin-left:2.5%;
+  margin-bottom:20rpx;
+}

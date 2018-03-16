@@ -1,0 +1,14 @@
+<!--pages/chapter/chapter.wxml-->
+<view class='container chapter'>
+
+<swiper >
+  <block wx:for="{{imageList}}" wx:for-item="img">
+    <swiper-item>
+      <image src="{{img.imageUrl}}" mode='widthFix'  />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+</view>

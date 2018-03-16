@@ -1,0 +1,82 @@
+/* pages/mine/mine.wxss */
+#mine{
+  padding: 50rpx 0;
+}
+.my-info{
+  padding: 0 50rpx;
+}
+.user-info{
+  display: flex;
+  justify-content: space-between;
+}
+.user-info text{
+  font-size: 38px;
+  font-weight: bold;
+}
+.user-info image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius:50%; 
+}
+
+.user-pass{
+  width: 50vw;
+  display: flex;
+
+
+}
+.user-pass>view{
+  width: 15vw;
+}
+.user-pass>view text{
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+.user-pass>view .num{
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+}
+/* 选项 */
+.options{
+  width: 100%;
+  margin-top: 30rpx;
+}
+.opt-item{
+  box-sizing: border-box;
+  padding: 0 50rpx;
+  width: 100%;
+  line-height: 50px;
+  border-bottom:1px solid #f3f3f3; 
+}
+.opt-item .iconfont{
+  color: #FFC824;
+  font-size: 18px;
+  margin-right:20rpx; 
+}
+.item-title {
+  width: 100%;
+}
+
+.my-collect{
+  display: flex;
+  white-space: nowrap;
+}
+.collects{
+  display: inline-block;
+  margin-right: 20rpx; 
+  width: 200rpx;
+}
+.collects image{
+  display: block;
+  width: 100%;
+}
+.collects text{
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  text-overflow:ellipsis;
+  overflow: hidden; 
+  white-space: nowrap;
+}

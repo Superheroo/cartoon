@@ -1,0 +1,25 @@
+<!--pages/classify/classify.wxml-->
+<view class='classify'>
+  <!--  搜索栏  -->
+  <view class='search-bar'>
+    <view class='search-box'>
+      <icon type="search"></icon>
+      <input confirm-type='search' placeholder="请输入漫画名" ></input>
+    </view>
+    <view class='search-comfirm'>
+      <text>搜索</text>
+    </view>
+  </view>
+
+  <!--  分类  -->
+  <view class='category-box' hidden='{{getRes}}'>
+      <block wx:for='{{category}}' wx:for-item='cat' >
+        <view data-cat="{{cat}}" class='category-item' hover-class='category-item-hover' bindtap='selectCategory'>
+            {{cat}}
+        </view>
+      </block>
+  </view>
+
+
+
+</view>

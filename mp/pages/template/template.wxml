@@ -1,0 +1,17 @@
+<template name="desc">
+      <view class='desc'>
+      <text>{{comicInfo.des}}</text>
+    </view>
+</template>
+
+<template name="summary">
+
+    <scroll-view class='summary'   scroll-y="true">
+      <view class='chapter_box'>
+        <block wx:for="{{chapterList}}" wx:for-item="chap">
+          <button bindtap="goToChapter" data-chapterid="{{chap.id}}">{{chap.name}}</button>
+        </block>
+      </view>
+    </scroll-view>
+
+</template>

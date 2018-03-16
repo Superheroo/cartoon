@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/detail/detail",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/chapter/chapter",
+    "pages/list/list",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFC824",
+    "navigationBarTitleText": "漫画城",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#CDCDCD",
+    "selectedColor": "#FFC824",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/comics/hot.png",
+        "selectedIconPath": "static/comics/hot-a.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "static/comics/classify.png",
+        "selectedIconPath": "static/comics/classify-a.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/comics/mine.png",
+        "selectedIconPath": "static/comics/mine-a.png"
+      }
+    ]
+  }
+}

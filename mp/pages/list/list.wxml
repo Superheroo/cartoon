@@ -1,0 +1,23 @@
+<!--pages/list/list.wxml-->
+
+<scroll-view class='resList' scroll-y="true">
+  <block wx:for="{{list}}" wx:for-item="res">
+
+    <view class='resCard' bindtap='goToDetail' data-comicname="{{res.name}}" data-comicdata="{{res}}">
+
+      <view class='cover'>
+        <image src='{{res.coverImg}}' mode="widthFix"></image>
+      </view>
+      <view class='info'>
+        <text class="info-title">{{res.name}}</text>
+        <text class='info-type'>类型：{{res.type}}</text>
+        <view class='info-area'>地区：{{res.area}}</view>
+        <view class='info-area' data-time="{{res.lastUpdate}}">上次更新时间：{{res.lastUpdate}}</view>
+        <text class='info-desc'>{{res.des}}</text>
+      </view>
+
+    </view>
+
+
+  </block>
+</scroll-view>

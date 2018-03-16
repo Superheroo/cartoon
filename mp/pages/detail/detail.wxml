@@ -1,0 +1,36 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+
+  <view class='header'>
+    <view class='headPic'>
+      <image src="{{comicInfo.coverImg}}"  mode="widthFix"></image>
+    </view>
+
+    <view class='headInfo'>
+      <view class='title'>
+        <text>{{comicInfo.name}}</text>
+         <image class='collectBtn' bindtap='toogleCollect' src='{{isCollect?"/static/comics/collect-a.png":"/static/comics/collect.png"}}' ></image> 
+      </view>
+      <text class='author'>作者：{{comicInfo.author}}</text>
+      <text class='tag'>标签：<block wx:for="{{comicInfo.tag}}" wx:for-item="t" wx:key="1">{{t}}</block> </text>
+      <text class='hot'>人气：{{comicInfo.hot}}</text>
+    </view>
+
+
+    
+  </view>
+
+  <view class='options'>
+  <!--showOpt 作用 让页面知道要展示什么内容  -->
+    <button class='{{ showOpt=="desc" ? "active":""}}' data-opt="desc" bindtap='toggleDesc'>介绍</button>
+    <button class='{{ showOpt=="summary" ? "active":""}}' data-opt="summary"  bindtap='toggleDesc'>目录</button>
+  </view>
+  <view class='option_card'>
+    <!-- 引用模板  -->
+    <import src="../template/template.wxml" />
+    <!-- 使用模板 给is属性动态数据，通过改变不同的模板名做切换 -->
+    <template is="{{ showOpt}}" data="{{chapterList,comicInfo}}"></template> 
+
+  </view>
+
+</view>
